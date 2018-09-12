@@ -9,7 +9,7 @@ public class Exercise4 {
         W_PAWN, W_KING, W_ROOK, W_KNIGHT
     }
 
-    private int[][] chessBoard = new int[8][8];
+    private ChessFigures[][] chessBoard = new ChessFigures[8][8];
 
     public static ChessFigures[][] boardState() {
         return new ChessFigures[][]{
