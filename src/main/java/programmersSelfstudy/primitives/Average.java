@@ -25,4 +25,19 @@ public class Average {
         }
     }
 
+    public void countAvg() {
+        double avg = 0;
+        for (int i = 0; i < numberOfClasses; i++) {
+            double classAvg = 0;
+            for (int grade : grades[i]) {
+                classAvg += grade;
+            }
+            classAvg /= numberOfGrades;
+            System.out.println("The average grade for the subject is " + i+1 + classAvg);
+            avg += classAvg;
+        }
+        avg /= numberOfClasses;
+        System.out.println("The average grade for all the subcjects is: " + avg);
+    }
+
 }
