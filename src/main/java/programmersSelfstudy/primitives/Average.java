@@ -13,6 +13,15 @@ public class Average {
     public Average(int numberOfClasses, int numberOfGrades) {
         this.numberOfClasses = numberOfClasses;
         this.numberOfGrades = numberOfGrades;
+        initGrades();
+    }
+
+
+    private void initGrades(){
+        grades = new int[numberOfClasses][];
+        for (int i = 0; i < grades.length; i++) {
+            grades[i] = new int[numberOfGrades];
+        }
     }
 
     public void getUserGrades() {
@@ -33,11 +42,18 @@ public class Average {
                 classAvg += grade;
             }
             classAvg /= numberOfGrades;
-            System.out.println("The average grade for the subject is " + i+1 + classAvg);
+            System.out.println("The average grade for the subject is " + i + 1 + classAvg);
             avg += classAvg;
         }
         avg /= numberOfClasses;
         System.out.println("The average grade for all the subcjects is: " + avg);
     }
 
+    public static void main(String[] args) {
+        int numberOfClasses = 3;
+        int numberOfGrades = 4;
+        Average average = new Average(numberOfClasses, numberOfGrades);
+        average.getUserGrades();
+        average.countAvg();
+    }
 }
