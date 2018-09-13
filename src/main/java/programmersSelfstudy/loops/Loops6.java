@@ -1,5 +1,7 @@
 package programmersSelfstudy.loops;
 
+//Przerób funkcję z zadania piątego tak, żeby metoda przymowała tablicę dwuwymiarową typu int[][].
+
 public class Loops6 {
 
     private static int sum(int[][] table) {

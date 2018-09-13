@@ -1,5 +1,7 @@
 package programmersSelfstudy.loops;
 
+//Napisz metodę, która jako jedyny argument przyjmie zmienną typu int[] i zwróci sumę wszystkich elementów tablicy.
+
 public class Loops5 {
 
 
