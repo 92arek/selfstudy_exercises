@@ -1,5 +1,5 @@
 package programmersSelfstudy.interfaces;
 
 public interface Computation {
-    double compute(double argument1, double argument2);
+    double compute(double arg1, double arg2);
 }
